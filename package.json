@@ -1,0 +1,23 @@
+{
+  "name": "refactora",
+  "version": "1.0.0",
+  "description": "An auto-refactoring tool that reorganizes code, reduces redundancy, and improves project performance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.1",
+    "jsdiff": "^1.1.1",
+    "prettier": "^3.6.2",
+    "ts-morph": "^27.0.0",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.0"
+  }
+}
