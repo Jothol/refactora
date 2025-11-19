@@ -4,7 +4,8 @@
   "description": "An auto-refactoring tool that reorganizes code, reduces redundancy, and improves project performance.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:fileDiscovery": "node --no-warnings --loader ts-node/esm ./tests/testFileDiscovery.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,12 +13,17 @@
   "dependencies": {
     "chalk": "^5.6.2",
     "commander": "^14.0.1",
+    "fast-glob": "^3.3.3",
     "jsdiff": "^1.1.1",
+    "micromatch": "^4.0.8",
     "prettier": "^3.6.2",
-    "ts-morph": "^27.0.0",
-    "typescript": "^5.9.3"
+    "ts-morph": "^27.0.0"
   },
   "devDependencies": {
-    "@types/node": "^24.7.0"
-  }
+    "@types/micromatch": "^4.0.10",
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "type": "module"
 }
